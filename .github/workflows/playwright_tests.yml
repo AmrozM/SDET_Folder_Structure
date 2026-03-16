@@ -4,10 +4,15 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v4/v5
       with: 
           python-version: '3.10'
     - run: pip install -r requirements.txt
     - run: playwright install
     - run: pytest -v
+      env:
+        ENV: Team5
+        MIS_TEAM5_URL: ${{ secrets.MIS_TEAM5_URL }}
+        MIS_TEAM5_USERNAME: ${{ secrets.MIS_TEAM5_USERNAME }}
+        MIS_TEAM5_PASSWORD: ${{ secrets.MIS_TEAM5_PASSWORD }}
