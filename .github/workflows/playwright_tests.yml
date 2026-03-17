@@ -24,9 +24,9 @@ jobs:
         VISION_TEAM5_PASSWORD: ${{ secrets.VISION_TEAM5_PASSWORD }}
         VISION_TEAM5_CUSTOMER_CODE: ${{ secrets.VISION_TEAM5_CUSTOMER_CODE }}
     - name: Upload test report
-    uses: actions/upload-artifact@v4
-    if: always()
-    with:
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
         name: test-report
         path: report.html
-        
+
