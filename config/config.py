@@ -2,7 +2,7 @@
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+load_dotenv(override=False)
 ENV = os.getenv("ENV")
 
 ENV_CONFIG = {
