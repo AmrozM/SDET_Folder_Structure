@@ -15,10 +15,10 @@ jobs:
       env:
         ENV: Team5
         MIS_TEAM5_URL: ${{ secrets.MIS_TEAM5_URL }}
+        MIS_TEAM5_SCHOOL_ID: ${{ secrets.MIS_TEAM5_SCHOOL_ID }}
         MIS_TEAM5_USERNAME: ${{ secrets.MIS_TEAM5_USERNAME }}
         MIS_TEAM5_PASSWORD: ${{ secrets.MIS_TEAM5_PASSWORD }}
         VISION_TEAM5_URL: ${{ secrets.VISION_TEAM5_URL }}
         VISION_TEAM5_USERNAME: ${{ secrets.VISION_TEAM5_USERNAME }}
         VISION_TEAM5_PASSWORD: ${{ secrets.VISION_TEAM5_PASSWORD }}
         VISION_TEAM5_CUSTOMER_CODE: ${{ secrets.VISION_TEAM5_CUSTOMER_CODE }}
-        
