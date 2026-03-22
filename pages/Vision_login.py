@@ -24,5 +24,4 @@ class LoginPage:
         self.password_input.fill(password)
         self.log.info(f"Logging in with Customer code: {customer_code}")
         self.sign_in_button.click()
-
-    
+        self.log.info("MAT Vision Login successful")
