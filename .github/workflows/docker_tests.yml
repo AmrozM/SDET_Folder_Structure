@@ -7,7 +7,7 @@ on:
 jobs:
   docker-test:
     runs-on: ubuntu-latest
-
+    environment: Team5
     env:
       MIS_TEAM5_URL: ${{secrets.MIS_TEAM5_URL}}
       MIS_TEAM5_USERNAME: ${{secrets.MIS_TEAM5_USERNAME}}
