@@ -1,8 +1,10 @@
 #pages/vision_navigate_to_studentlist
 from playwright.sync_api import Page, expect
+from utils.logger import get_logger
 class vision_navigation_class:
     def __init__(self, page: Page):
         self.page = page
+        self.log = get_logger("VisionNavigation")
         self.vision_list = self.page.locator('li:has(i.fa-list-alt)')
         self.vision_student_list = self.page.locator('#verticalmenu-Student:has-text("Students")')
         self.studentlist_pagename = self.page.locator('#StudentListContent')
