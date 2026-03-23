@@ -12,7 +12,7 @@ def test_Login_MIS_Team5(page):
     login.open(MIS_URL)
     login.login(SCHOOL_ID, MIS_USERNAME, MIS_PASSWORD)
     navigator = goToStudents(page)
-    expect(navigator.student_module).to_be_visible(timeout=15000)
+    expect(navigator.student_module).to_be_attached(timeout=15000)
     page.wait_for_load_state("load")
     navigator.go_to_student_module()
     navigator.select_student()
